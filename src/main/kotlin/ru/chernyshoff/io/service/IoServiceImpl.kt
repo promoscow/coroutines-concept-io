@@ -13,8 +13,9 @@ class IoServiceImpl(
 
     private val logger = KotlinLogging.logger { this::class.java }
 
-    override suspend fun getAndDelay(): String =
+    override suspend fun delayAndContat(taskId: String): String =
         RandomStringUtils.secure().nextAlphanumeric(6)
+            .let { "$taskId-$it" }
             .also {
                 delay(timeMillis = delayMs)
                 logger.info { "Result: $it" }

@@ -3,5 +3,5 @@ package ru.chernyshoff.io.service
 
 interface IoService {
 
-    suspend fun getAndDelay(): String
+    suspend fun delayAndContat(taskId: String): String
 }
