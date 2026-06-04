@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: coroutines-concept-io
+server:
+  port: 8021
+app:
+  delay-ms: 150
