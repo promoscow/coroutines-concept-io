@@ -12,8 +12,6 @@ class IoController(
     private val service: IoService
 ) {
 
-    @GetMapping("/task/{taskId}")
-    suspend fun get(
-        @PathVariable taskId: String
-    ): String = service.delayAndContat(taskId)
+    @GetMapping("/trace/{traceId}")
+    suspend fun trace(@PathVariable traceId: String): String = service.trace(traceId)
 }

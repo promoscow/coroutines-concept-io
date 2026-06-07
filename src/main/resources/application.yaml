@@ -1,7 +1,8 @@
 spring:
   application:
-    name: c
+    name: coroutines-concept-io
 server:
   port: 8021
 app:
-  delay-ms: 150
+  delay-ms: 150 # время задержки для имитации I/O операции
+  service-prefix: io
