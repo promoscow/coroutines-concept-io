@@ -1,6 +1,6 @@
 spring:
   application:
-    name: coroutines-concept-io
+    name: c
 server:
   port: 8021
 app:
