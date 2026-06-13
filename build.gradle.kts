@@ -24,6 +24,8 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 	implementation("tools.jackson.module:jackson-module-kotlin")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
+	implementation("io.micrometer:micrometer-registry-prometheus")
 	implementation("org.apache.commons:commons-lang3:3.20.0")
 	implementation("io.github.oshai:kotlin-logging-jvm:8.0.4")
 	testImplementation("org.springframework.boot:spring-boot-starter-webflux-test")
